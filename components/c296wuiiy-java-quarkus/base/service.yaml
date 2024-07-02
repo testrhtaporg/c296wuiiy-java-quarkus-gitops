@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: c296wuiiy-java-quarkus
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: c296wuiiy-java-quarkus 
+  name: c296wuiiy-java-quarkus
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: c296wuiiy-java-quarkus 
